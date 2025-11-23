@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560" role="img" aria-label="Laptop placeholder">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect x="60" y="60" width="680" height="360" rx="12" fill="#e9eef5" stroke="#c5d1e0" />
+  <rect x="120" y="120" width="560" height="240" rx="6" fill="#ffffff" />
+  <g fill="#6b7280" font-family="Arial, Helvetica, sans-serif">
+    <text x="400" y="320" font-size="36" text-anchor="middle">Laptop Image</text>
+    <text x="400" y="360" font-size="20" text-anchor="middle">(placeholder)</text>
+  </g>
+  <rect x="200" y="440" width="400" height="18" rx="6" fill="#cbd5e1" />
+  <rect x="280" y="468" width="240" height="10" rx="5" fill="#9aa7b8" />
+</svg>
