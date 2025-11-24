@@ -174,10 +174,10 @@ a, a:hover { text-decoration: none; }
 
 /* Inline profile image next to the heading */
 .home-text .profile-inline {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    margin-left: 16px;
+    width: 160px;
+    height: 160px;
+    border-radius: 180%;
+    margin-left: 18px;
     vertical-align: middle;
     object-fit: cover;
     border: 4px solid var(--main-color);
@@ -663,9 +663,9 @@ a, a:hover { text-decoration: none; }
     .home-text h1 { font-size: 30px; }
 
     .home-text .profile-inline {
-        width: 110px;
-        height: 110px;
-        margin-left: 10px;
+        width: 120px;
+        height: 120px;
+        margin-left: 12px;
     }
 
     .about-content ul li { width: 100%; float: none; }
