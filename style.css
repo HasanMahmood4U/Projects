@@ -176,7 +176,7 @@ a, a:hover { text-decoration: none; }
 .home-text .profile-inline {
     width: 120px;
     height: 120px;
-    border-radius: 50%;
+    border-radius: 70%;
     margin-left: 14px;
     vertical-align: middle;
     object-fit: cover;
