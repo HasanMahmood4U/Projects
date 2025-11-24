@@ -663,9 +663,9 @@ a, a:hover { text-decoration: none; }
     .home-text h1 { font-size: 30px; }
 
     .home-text .profile-inline {
-        width: 150px;
-        height: 150px;
-        margin-left: 12px;
+        width: 180px;
+        height: 180px;
+        margin-left: 14px;
     }
 
     .about-content ul li { width: 100%; float: none; }
