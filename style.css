@@ -711,15 +711,15 @@ a, a:hover { text-decoration: none; }
 
     .home-text { position: relative; }
 
-    /* make the inline profile overlap the heading on small screens and fit better */
+    /* position the inline profile to the right and overlap the "HELLO, I'M" line */
     .home-text .profile-inline {
         position: absolute;
         right: 8px;
-        top: -8px;
-        width: 110px;
-        height: 110px;
+        top: 8px; /* align with h4 */
+        width: 100px;
+        height: 100px;
         margin-left: 0;
-        z-index: 10;
+        z-index: 20;
         border: 3px solid var(--main-color);
         box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     }
