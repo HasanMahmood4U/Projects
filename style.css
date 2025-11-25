@@ -214,10 +214,40 @@ a, a:hover { text-decoration: none; }
                 border-radius: 50%;
                 border: 1px solid #cccccc;
                 text-align: center;
-                transition: all .3s ease-out 0s;
+                transition: color .25s ease-out, background .25s ease-out;
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+                z-index: 1;
             }
 
-                .header-social .header-social-icon ul li a:hover { color: var(--white); background-color: var(--main-color); background-color: var(--main-color); }
+                /* blurred bubble behind each social icon (keeps icon box size unchanged) */
+                .header-social .header-social-icon ul li a::before {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%) scale(0.8);
+                    width: 140%;
+                    height: 140%;
+                    border-radius: 50%;
+                    pointer-events: none;
+                    background: radial-gradient(circle at 30% 30%, rgba(168,0,168,0.28), rgba(168,0,168,0.12) 40%, transparent 60%);
+                    filter: blur(8px);
+                    opacity: 0;
+                    transition: transform .35s ease, opacity .25s ease;
+                    z-index: -1;
+                }
+
+                .header-social .header-social-icon ul li a:hover {
+                    color: var(--white);
+                    background-color: var(--main-color);
+                }
+
+                .header-social .header-social-icon ul li a:hover::before {
+                    opacity: 1;
+                    transform: translate(-50%, -50%) scale(1);
+                }
 
 /*ABOUT the section*/
 
