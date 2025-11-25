@@ -709,10 +709,19 @@ a, a:hover { text-decoration: none; }
     .home-text h4 { font-size: 24px; }
     .home-text h1 { font-size: 30px; }
 
+    .home-text { position: relative; }
+
+    /* make the inline profile overlap the heading on small screens and fit better */
     .home-text .profile-inline {
-        width: 220px;
-        height: 220px;
-        margin-left: 16px;
+        position: absolute;
+        right: 8px;
+        top: -8px;
+        width: 110px;
+        height: 110px;
+        margin-left: 0;
+        z-index: 10;
+        border: 3px solid var(--main-color);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     }
 
     .about-content ul li { width: 100%; float: none; }
