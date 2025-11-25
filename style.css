@@ -183,11 +183,28 @@ a, a:hover { text-decoration: none; }
     border: 4px solid var(--main-color);
 }
 
+/* Align the View button and place a circular profile image next to it on md+ */
+.home-btn {
+    margin-top: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-near-btn {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--main-color);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
 /* Keep any remaining .home-img images from growing too long*/
 .home-img img { max-width: 300px; }
 .home-img.right-img img { max-width: 320px; }
 
-.header-social { position: absolute; bottom: 30px; left: 15px; width: 100%; }
+.header-social { position: absolute; bottom: 10px; left: 15px; width: 100%; }
     .header-social .header-social-icon { position: relative; }
 
         .header-social .header-social-icon::before {
